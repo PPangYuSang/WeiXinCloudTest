@@ -1,0 +1,55 @@
+/* 手机 */
+@media screen and (max-width:600px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .img_container {
+        text-align: center;
+        width:100%;
+        margin: -5% auto; /*水平居中*/
+    }
+    
+    #imgindex {
+        margin-top: 6%;
+        width:95%;
+        z-index: 1;
+    }
+}
+/*平板*/
+@media screen and (min-width:600px) and (max-width:960px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .img_container {
+        text-align: center;
+        width:100%;
+        margin: -5% auto; /*水平居中*/
+    }
+    
+    #imgindex {
+        margin-top: 6%;
+        width:95%;
+        z-index: 1;
+    }
+}
+/*PC*/
+@media screen and (min-width:960px){ 
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .img_container {
+        float: left;
+        text-align: center;
+        width:100%;
+        margin: 6.1% auto; /*水平居中*/
+    }
+    
+    #imgindex {
+        /* margin-top: 6%; */
+        width:90%;
+        z-index: 1;
+    }
+}

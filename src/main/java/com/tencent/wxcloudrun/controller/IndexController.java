@@ -14,7 +14,7 @@ public class IndexController {
    * 主页页面
    * @return API response html
    */
-  @GetMapping
+  @GetMapping("/")
   public String index() {
     return "index";
   }

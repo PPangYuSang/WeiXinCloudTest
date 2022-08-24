@@ -3,50 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-    <title>投票</title>
-    <!-- 引入 WeUI CDN 链接 -->
-    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/2.3.0/weui.min.css"/>
-    <style type="text/css">
-        /*.option_title{*/
-        /*    left: 0;*/
-        /*    position: fixed;*/
-        /*    bottom: 0; !*这里换成top:0;就悬浮在头部*!*/
-        /*    width: 100%;*/
-        /*    z-index: 100;*/
-        /*}*/
-
-             /*手机*/
-        @media screen and (max-width:600px){
+    <style> 
+            @media screen and (max-width:600px){
             body {
                 margin: 0;
                 padding: 0;
             }
             .navigation-bar {
                 position: fixed;
-                /* min-width: max-content;  */
-                width: 100%; 
+                width: 100%;
                 height: 8%;
                 bottom: 0;
-                /* width: 1200px; */
-                /*padding-top: 45px;*/
-                /*padding-bottom: 50px; */
-                /* background: #fff; */
-                /* 添加背景图片 */
-                /*background-image: url("Home/images/bg2.jpg");*/
-                /*background-size: 100% 100%;*/
                 background: white no-repeat center;
+                z-index: 9999;
 
             }
-            .index_bar { 
+            .index_bar {
                 float: left;
-
                 width: 25%;
                 height: 100%;
                 text-align: center;
             }
             .navigation-bar-img {
                 width: 17%;
-                padding-top: 5%;
+                padding-top: 8%;
             }
             span {
                 font-size: small;
@@ -63,7 +43,7 @@
             }
             .navigation-bar {
                 position: fixed;
-                width: 100%; 
+                width: 100%;
                 height: 9%;
                 bottom: 0;
                 /* width: 1200px; */
@@ -74,11 +54,11 @@
                 /*background-image: url("Home/images/bg2.jpg");*/
                 /*background-size: 100% 100%;*/
                 background: white no-repeat center;
+                z-index: 9999;
 
             }
-            .index_bar { 
+            .index_bar {
                 float: left;
-
                 width: 25%;
                 height: 100%;
                 text-align: center;
@@ -88,7 +68,7 @@
                 padding-top: 3%;
             }
 
-            
+
             .index_bar:hover{
                 background: blanchedalmond;
             }
@@ -101,15 +81,14 @@
             }
             .navigation-bar {
                 position: fixed;
-                min-width: max-content; 
-                width: 100%; 
+                min-width: max-content;
+                width: 100%;
                 height: 12%;
                 background: white no-repeat center;
-
+                z-index: 9999;
             }
-            .index_bar { 
+            .index_bar {
                 float: left;
-
                 width: 25%;
                 height: 100%;
                 text-align: center;
@@ -125,43 +104,38 @@
                 background: blanchedalmond;
             }
         }
-
     </style>
 </head>
-<body>
-<div class="navigation-bar">
-    <div class="index_bar">
-        <img class="navigation-bar-img" src="images/index.png" onclick="toIndex()">
+    <div class="navigation-bar" >
+    <div class="index_bar" onclick="toIndex()">
+        <img class="navigation-bar-img" src="../images/index.png">
         <div class="navigation-bar-text">
             <span onclick="toIndex()" >首 页</span>
         </div>
     </div>
     <div class="index_bar">
-        <img class="navigation-bar-img" src="images/sing_up.png" onclick="toIndex()">
+        <img class="navigation-bar-img" src="../images/sing_up.png" onclick="toSignUp()">
         <div class="navigation-bar-text">
             <span>报 名</span>
         </div>
     </div>
      <div class="index_bar">
-         <img class="navigation-bar-img" src="images/vote.png" onclick="toIndex()">
+         <img class="navigation-bar-img" src="../images/vote.png" onclick="toVote()">
          <div class="navigation-bar-text">
             <span>投 票</span>
         </div>
     </div> 
     <div class="index_bar">
-        <img class="navigation-bar-img" src="images/ranking.png" onclick="toIndex()">
+        <img class="navigation-bar-img" src="../images/ranking.png" onclick="toRank()">
         <div class="navigation-bar-text">
             <span>排 行</span>
         </div>
     </div>
 </div>
 </body>
-
-
-<script type="text/javascript"> 
-function toIndex(){
-    alert("hello world");
-}
-
+<script>
+    function toIndex() {
+        alert("hello world");
+    };
 </script>
 </html>

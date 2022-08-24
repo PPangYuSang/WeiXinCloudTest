@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>瀑布流布局</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        html{
+            font-size: 12px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div id='forcenter'></div>
+    </div>
+    <script src="../js/waterfull.js"></script>
+    <script>
+        let mwf = new WaterFall({
+            id: 'forcenter',
+            imgUrls: [
+            '../images/index_background.png',
+                '../images/apic30145.jpeg',
+                '../images/OIP-C (1).jpeg',
+                '../images/OIP-C (2).jpeg',
+                '../images/OIP-C.jpeg',
+                '../images/OIP-C (3).jpeg',
+                '../images/OIP-C (4).jpeg',
+                '../images/OIP-C (5).jpeg',
+                '../images/OIP-C (6).jpeg',
+                '../images/OIP-C (7).jpeg',
+                '../images/OIP-C (8).jpeg',
+                '../images/OIP-C (9).jpeg'
+            ]
+        });
+
+        window.onload = ()=>{
+            mwf.WFRender();
+        }
+
+        window.onresize = ()=>{
+            mwf.resizeWF();
+        }
+    </script>
+</body>
+</html>
